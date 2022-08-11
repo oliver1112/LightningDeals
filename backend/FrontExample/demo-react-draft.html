@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+<h1>Draft</h1>
+<div id = "root"></div>
+<script type =  "text/babel">
+    class App extends React.Component {
+        constructor() {
+            super();
+            this.state = {num : 0}
+        }
+
+        render() {
+            return  <div>
+                        <button onClick={
+                            () => {
+                                this.setState(preState => {
+                                    return {num: preState.num + 10}
+                                })
+                            }
+                        }>plus 10</button>
+                        <button onClick = {this.minusFn}>minus 5</button>
+                        <div>This num is: {this.state.num}</div>
+                    </div>
+        }
+        minusFn = () => {
+            this.setState(preState => {
+                return {num: preState.num - 5}
+            });
+        }
+    }
+
+    ReactDOM.render(<App />, document.getElementById("root"));
+
+</script>
+
+</body>
+</html>

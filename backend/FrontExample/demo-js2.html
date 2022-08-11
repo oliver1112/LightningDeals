@@ -1,0 +1,249 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<div class="user common">Users:</div>-->
+
+<!--<ul class="box common">-->
+<!--    <li id="john">John</li>-->
+<!--    <li id="peter">Peter</li>-->
+<!--</ul>-->
+<!--</body>-->
+<!--<script>-->
+<!--    var oUser = document.getElementById('user');-->
+<!--    console.log(oUser);-->
+
+<!--    var oCommon = document.getElementsByClassName('common');-->
+<!--    console.log(oCommon);-->
+
+<!--    var oUl = document.getElementsByClassName('box');-->
+<!--    var oLis = document.getElementsByTagName('li');-->
+<!--    var john = oUl[0].getElementsByTagName('li')[0];-->
+<!--    console.log(oUl);-->
+<!--    console.log(oLis);-->
+<!--    console.log(john);-->
+
+<!--    //querySelector-->
+<!--    var oUser2 = document.querySelector('#user');-->
+<!--    console.log(oUser2);-->
+
+<!--    var oLis2 = document.querySelectorAll('li');-->
+<!--    console.log(oLis2);-->
+
+<!--    var oCommons = document.querySelectorAll('.common');-->
+<!--    console.log(oCommons);-->
+
+<!--</script>-->
+<!--</html>-->
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<ol id="ol">-->
+<!--    <li>0</li>-->
+<!--    <li>1</li>-->
+<!--    <li>2</li>-->
+<!--</ol>-->
+
+<!--<script>-->
+<!--    var ol = document.getElementById('ol');-->
+<!--    var newLi1 = document.createElement('li');-->
+<!--    newLi1.innerHTML = 'append';-->
+<!--    ol.append(newLi1);-->
+
+<!--    var newLi2 = document.createElement('li');-->
+<!--    newLi2.innerHTML = 'prepend';-->
+<!--    ol.prepend(newLi2);-->
+
+<!--    ol.before('before');-->
+<!--    ol.after('after');-->
+<!--</script>-->
+<!--</html>-->
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<div>this is a div</div>-->
+<!--<p>this is a paragraph</p>-->
+
+<!--<script>-->
+<!--    var oDiv = document.getElementsByTagName('div')[0];-->
+<!--    oDiv.className = 'box';-->
+<!--    //-->
+<!--    var oP = document.getElementsByTagName('p')[0];-->
+<!--    oP.classList.add('box');-->
+<!--    oP.classList.add('common');-->
+
+<!--    oDiv.style.color = 'red';-->
+<!--</script>-->
+<!--</html>-->
+
+
+
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--    <style>-->
+<!--        div{-->
+<!--            background-color:lightblue;-->
+<!--            width: 200px;-->
+<!--            height: 200px;-->
+<!--        }-->
+<!--    </style>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--<div></div>-->
+
+<!--<script>-->
+
+<!--    var oDiv = document.getElementsByTagName('div')[0];-->
+
+<!--    oDiv.onclick = function(e){-->
+<!--        console.log(e);-->
+<!--        console.log(e.target);-->
+<!--    }-->
+
+<!--    oDiv.addEventListener('mouseover', function(e){-->
+<!--        console.log(e);-->
+<!--        console.log(e.target);-->
+<!--    }, false)-->
+
+<!--</script>-->
+<!--</body>-->
+<!--</html>-->
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Event 2</title>-->
+<!--    <style>-->
+<!--        div {-->
+<!--            border: 1px solid black;-->
+<!--        }-->
+
+<!--        #grandparent {-->
+<!--            height: 400px;-->
+<!--            width: 400px;-->
+<!--            background-color: lightgray;-->
+<!--        }-->
+
+<!--        #parent {-->
+<!--            height: 200px;-->
+<!--            width: 200px;-->
+<!--            background-color: lightpink;-->
+<!--        }-->
+
+<!--        #child {-->
+<!--            height: 100px;-->
+<!--            width: 100px;-->
+<!--            background-color: lightblue;-->
+<!--        }-->
+<!--    </style>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--<div id="grandparent">-->
+<!--    <div id="parent">-->
+<!--        <div id="child"></div>-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--<script>-->
+<!--    var gDiv = document.getElementById('grandparent');-->
+<!--    var pDiv = document.getElementById('parent');-->
+<!--    var cDiv = document.getElementById('child');-->
+
+<!--    gDiv.addEventListener('click', function () {-->
+<!--        console.log("grandparent bubbling! ");-->
+<!--    }, true);-->
+
+<!--    pDiv.addEventListener('click', function () {-->
+<!--        console.log("parent bubbling! ");-->
+<!--    }, true);-->
+
+<!--    cDiv.addEventListener('click', function () {-->
+<!--        console.log("child bubbling! ");-->
+<!--    }, true);-->
+
+<!--    // ===== onclick has only bubbling =====-->
+<!--    gDiv.onclick = function() {-->
+<!--        console.log('gp')-->
+<!--    };-->
+
+<!--    pDiv.onclick = function() {-->
+<!--        console.log('p')-->
+<!--    };-->
+
+<!--    cDiv.onclick = function() {-->
+<!--        console.log('c')-->
+<!--    };-->
+
+<!--</script>-->
+
+<!--</body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event 2</title>
+    <style>
+        div {
+            border: 1px solid black;
+        }
+        .wrapper {
+            width: 200px;
+            height: 200px;
+            background-color: lightgray;
+            position: relative;
+        }
+        .apply {
+            width: 80px;
+            height: 30px;
+            background-color: antiquewhite;
+            line-height: 30px;
+            text-align: center;
+            position:absolute;
+            bottom:20px;
+            right: 10px;
+            color:black;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="apply">Apply</div>
+</div>
+<script>
+    var wrapper = document.getElementsByClassName('wrapper')[0];
+    var apply = document.getElementsByClassName('apply')[0];
+
+    wrapper.addEventListener('click', function (e) {
+        console.log('... wrapper ... ');
+    }, false);
+
+    apply.addEventListener('click', function (event) {
+        event.stopPropagation();
+        console.log('... apply ... ');
+    }, false);
+
+</script>
+</body>
+</html>
+
