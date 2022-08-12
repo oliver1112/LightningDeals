@@ -28,6 +28,8 @@ This Spring framework has two advandage:
 ### Database ERD
 Hibernate is an object-relational mapping tool for the Java. It provides a framework for mapping an object-oriented domain model to a relational database.
 The Entity Relationship Diagram (ERD) of this project is as follows:
+![ERD](https://github.com/oliver1112/OnlineOrder/blob/main/assets/erd.png)
+
 
 I use Hibernate to store and manage restaurants food and order items data.
 
