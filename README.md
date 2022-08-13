@@ -62,4 +62,3 @@ I use React and JavaScript in this project. Some components are imported from An
 - Add restaurant owner function to helper owner manage restaurant order or modify menu.
 - Add real checkout function with paypal API
 - Improve UI to attract more users.
-- Improve AWS tier to get HTTP response quickly.
