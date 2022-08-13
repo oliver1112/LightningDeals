@@ -21,8 +21,7 @@ The backend complete code can be seen in the [backend folder](https://github.com
 ### Spring framework
 Spring framework is an open-source development framework for Enterprise Java. The Spring Web MVC framework  structrue in this project is as follows:
 
-
-![structure](https://github.com/oliver1112/OnlineOrder/blob/main/assets/project%20structure.png)
+<img src="https://github.com/oliver1112/OnlineOrder/blob/main/assets/project%20structure.png" alt="structure" width="550"/>
 
 
 This Spring framework has two advandage:
@@ -32,7 +31,7 @@ This Spring framework has two advandage:
 
 ### Database ERD
 The Entity Relationship Diagram (ERD) of this project is as follows:
-![ERD](https://github.com/oliver1112/OnlineOrder/blob/main/assets/erd.png)
+<img src="https://github.com/oliver1112/OnlineOrder/blob/main/assets/erd.png" alt="ERD" width="700"/>
 
 I use Hibernate to store and manage restaurants food and order items data. Hibernate is an object-relational mapping tool for the Java. It provides a framework for mapping an object-oriented domain model to a relational database.
 
