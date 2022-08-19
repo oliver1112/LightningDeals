@@ -48,7 +48,7 @@ To process the user access function, I implement a session-based authentication 
 
 
 ## Frontend
-visit [my website](http://54.82.200.161/) or watch the website demo for specific website frontend implementation.
+Visit [my website](http://54.82.200.161/) or watch the website demo for specific website frontend implementation.
 
 
 The complete code of the frontend can be seen in the [frontend folder](https://github.com/oliver1112/OnlineOrder/tree/main/frontend).
