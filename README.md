@@ -60,5 +60,5 @@ I use React and JavaScript in this project. Some components are imported from An
 
 ## Ideas for Future Work
 - Add restaurant owner function to helper owner manage restaurant order or modify menu.
-- Add real checkout function with paypal API
+- Add real checkout function with paypal or credit card
 - Improve UI to attract more users.
