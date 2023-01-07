@@ -1,6 +1,6 @@
 
 
-# OnlineRestaurant
+# Lightning Deals
 This is an online food order system. The backend is based on Spring and Hibernate. The frontend is based on Javascript and React. 
 
 ## Website Demo 
